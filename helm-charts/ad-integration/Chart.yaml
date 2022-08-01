@@ -1,0 +1,19 @@
+annotations:
+  category: ADIntegration
+apiVersion: v2
+appVersion: 0.1.0
+description: Active Directory Integration
+engine: gotpl
+home: https://github.com/paas2/charts/tree/master/ad-integration
+icon: https://github.com/paas2/charts/tree/master/ad-integration/img/icon-220x234.png
+keywords:
+  - ad
+  - integration
+kubeVersion: '>= 1.16.0-0'
+maintainers:
+  - email: canpolatoral@gmail.com
+    name: Canpolat Oral
+name: ad-integration
+sources:
+  - https://github.com/paas2/ad-integration
+version: 0.1.0
