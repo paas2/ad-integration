@@ -5,7 +5,7 @@ metadata:
 subjects:
   - kind: User
     apiGroup: rbac.authorization.k8s.io
-    name: https://canpolattest.uaenorth.cloudapp.azure.com/auth/realms/master#2d3b8f9c-2864-43a1-8fee-daaa7a21e309
+    name: https://canpolattest.uaenorth.cloudapp.azure.com/auth/realms/master#bc644ceb-8a3c-4971-b6c3-078e369df773
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
