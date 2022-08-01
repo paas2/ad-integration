@@ -3,9 +3,16 @@ kind: ClusterRoleBinding
 metadata:
   name: sahab2-cluster-admin
 subjects:
+  {{- range $user := .Values.clusteradmin.users }}
   - kind: User
     apiGroup: rbac.authorization.k8s.io
-    name: https://canpolattest.uaenorth.cloudapp.azure.com/auth/realms/master#2d3b8f9c-2864-43a1-8fee-daaa7a21e309
+    name: {{ $user }}
+  {{- end }}
+  {{- range $group := .Values.clusteradmin.groups }}
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: {{ $group }}
+  {{- end }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
