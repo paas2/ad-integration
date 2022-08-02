@@ -1,12 +1,12 @@
 clusteradmin:
   users:
-  - https://canpolattest.uaenorth.cloudapp.azure.com/auth/realms/master#2d3b8f9c-2864-43a1-8fee-daaa7a21e309
-  - testuser1
+  - user1
+  - user2
   groups:
-  - testgroup1
+  - group1
 view:
   users:
-  - https://canpolattest.uaenorth.cloudapp.azure.com/auth/realms/master#bc644ceb-8a3c-4971-b6c3-078e369df773
-  - testuser2
+  - user3
   groups:
-  - testgroup1
+  - group2
+  - group3
